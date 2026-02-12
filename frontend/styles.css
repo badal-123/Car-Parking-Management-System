@@ -1,0 +1,86 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(120deg, #f4f9ff, #eaf4f0);
+  color: #1b1f23;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.cards article {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+form {
+  display: grid;
+  gap: 0.6rem;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+input,
+button {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccd4df;
+}
+
+button {
+  background: #0057ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.6rem;
+}
+
+.slot {
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: #dbf5e7;
+}
+
+.slot.occupied {
+  background: #ffe0e0;
+}
+
+#message {
+  white-space: pre-wrap;
+  background: #0f172a;
+  color: #cbd5e1;
+  border-radius: 12px;
+  padding: 0.75rem;
+  min-height: 80px;
+}
